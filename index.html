@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EECU Calc</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="JavaScript" href="utils.js">
+</head>
+
+<body>
+    <div id="top-section">
+        <section class="career-text"> <!--container for career-->
+            <img id="number1" src="assets/1.png" alt="1">
+            <select hidden name="careers" id="career" placeholder=""> <!--Career Droplist-->
+
+            </select>
+        </section>
+
+        <div id="root"></div>
+
+        <section class="career-text1">
+            <div hidden id="root"></div>
+        </section>
+        <section class="salary-text"> <!--container for career-->
+            <img id="number2" src="assets/2.png" alt="2">
+        
+            <input id="salary" type="text" placeholder="Salary"> <!--Salary placeholder-->
+        </section>
+        <h1>Budget</h1>
+    </div>
+
+    <aside class="content1">
+        <div id="big-box">
+            <div class="head">
+                <img class="three" src="assets/3.png" alt="3">
+
+                <p class="uppie">Taxes</p>
+                <div class="taxes-descript">
+                    <p>Federal Taxes: Monthly * 0.12</p>
+                    <p>State Taxes: Monthly * 0.07</p>
+                    <p>Social Secuirty: Monthly * 0.062</p>
+                    <p>Medicare: Monthly * 0.0145</p>
+                    <p>State Disability: Monthly * 0.01</p>
+                    <p>Retirement Investment: Monthly * 0.05</p>
+                    <p>Medical: Monthly -$180</p>
+                </div>
+
+
+            </div>
+            <div class="head2">
+                <img class="four" src="assets/4.png" alt="4">
+
+                <p class="uppie">Kids</p>
+                <div class="kids-descript">
+                    <p>Monthly - </p>
+                    <input type="number" name="kids-deduction" id="kid-spending" placeholder="Amount Spent on Kids">
+                </div>
+            </div>
+            <div class="head3">
+                <img class="five" src="assets/5.png" alt="5">
+                <p class="uppie">House</p>
+                <div class="house-descript">
+                    <p>Monthly - </p>
+                    <input type="number" name="house-expenses" id="house-spending" placeholder="House Expenses">
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <section id="math-graph">
+                          
+                <div class="content2">
+                    <h3 id="net-monthly-income">
+                        <p class="nmi"></p>
+                    </h3>
+                    <br>
+                    <div>
+
+                        <div class="tableandtitle">
+                            <div class="abovetable">
+                                <img class="six" src="/assets/6.png" alt="six">
+                                <h4>Expenses</h4>
+                            </div>
+
+                
+
+                            <div class="table">
+                                <table>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Decs</th>
+                                        <th>-</th>
+                                        <th>+</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th><input type="date" name="date" class="input-field"></th>
+                                        <th><input type="text" name="desc" class="input-field"></th>
+                                        <th class="neg"><input type="text" class="input-field"></th>
+                                        <th class="pos"><input type="text" class="input-field"></th>
+                                    </tr>
+                                    <tr>
+                                        <th><input type="date" name="date" class="input-field"></th>
+                                        <th><input type="text" name="desc" class="input-field"></th>
+                                        <th class="neg"><input type="text" class="input-field"></th>
+                                        <th class="pos"><input type="text" class="input-field"></th>
+                                    </tr>
+                                    <tr>
+                                        <th><input type="date" name="date" class="input-field"></th>
+                                        <th><input type="text" name="desc" class="input-field"></th>
+                                        <th class="neg"><input type="text" class="input-field"></th>
+                                        <th class="pos"><input type="text" class="input-field"></th>
+                                    </tr>
+                                    <tr>
+                                        <th><input type="date" name="date" class="input-field"></th>
+                                        <th><input type="text" name="desc" class="input-field"></th>
+                                        <th class="neg"><input type="text" class="input-field"></th>
+                                        <th class="pos"><input type="text" class="input-field"></th>
+                                    </tr>
+                                    <tr>
+                                        <th><input type="date" name="date" class="input-field"></th>
+                                        <th><input type="text" name="desc" class="input-field"></th>
+                                        <th class="neg"><input type="text" class="input-field"></th>
+                                        <th class="pos"><input type="text" class="input-field"></th>
+                                    </tr>
+                                    <tr>
+                                        <th><input type="date" name="date" class="input-field"></th>
+                                        <th><input type="text" name="desc" class="input-field"></th>
+                                        <th class="neg"><input type="text" class="input-field"></th>
+                                        <th class="pos"><input type="text" class="input-field"></th>
+                                    </tr>
+                                    <tr>
+                                        <th><input type="date" name="date" class="input-field"></th>
+                                        <th><input type="text" name="desc" class="input-field"></th>
+                                        <th class="neg"><input type="text" class="input-field"></th>
+                                        <th class="pos"><input type="text" class="input-field"></th>
+                                    </tr>
+                                    <tr>
+                                        <th><input type="date" name="date" class="input-field"></th>
+                                        <th><input type="text" name="desc" class="input-field"></th>
+                                        <th class="neg"><input type="text" class="input-field"></th>
+                                        <th class="pos"><input type="text" class="input-field"></th>
+                                    </tr>
+                                    <tr>
+                                        <th><input type="date" name="date" class="input-field"></th>
+                                        <th><input type="text" name="desc" class="input-field"></th>
+                                        <th class="neg"><input type="text" class="input-field"></th>
+                                        <th class="pos"><input type="text" class="input-field"></th>
+                                    </tr>
+                                    <tr>
+                                        <th><input type="date" name="date" class="input-field"></th>
+                                        <th><input type="text" name="desc" class="input-field"></th>
+                                        <th class="neg"><input type="text" class="input-field"></th>
+                                        <th class="pos"><input type="text" class="input-field"></th>
+                                    </tr>
+                                    <tr>
+                                        <th><input type="date" name="date" class="input-field"></th>
+                                        <th><input type="text" name="desc" class="input-field"></th>
+                                        <th class="neg"><input type="text" class="input-field"></th>
+                                        <th class="pos"><input type="text" class="input-field"></th>
+                                    </tr>
+                                    <tr>
+                                        <th><input type="date" name="date" class="input-field"></th>
+                                        <th><input type="text" name="desc" class="input-field"></th>
+                                        <th class="neg"><input type="text" class="input-field"></th>
+                                        <th class="pos"><input type="text" class="input-field"></th>
+                                    </tr>
+                                    <tr>
+                                        <th><input type="date" name="date" class="input-field"></th>
+                                        <th><input type="text" name="desc" class="input-field"></th>
+                                        <th class="neg"><input type="text" class="input-field"></th>
+                                        <th class="pos"><input type="text" class="input-field"></th>
+                                    </tr>
+                                    <tr>
+                                        <th><input type="date" name="date" class="input-field"></th>
+                                        <th><input type="text" name="desc" class="input-field"></th>
+                                        <th class="neg"><input type="text" class="input-field"></th>
+                                        <th class="pos"><input type="text" class="input-field"></th>
+                                    </tr>
+                                    <tr>
+                                        <th><input type="date" name="date" class="input-field"></th>
+                                        <th><input type="text" name="desc" class="input-field"></th>
+                                        <th class="neg"><input type="text" class="input-field"></th>
+                                        <th class="pos"><input type="text" class="input-field"></th>
+                                    </tr>
+                                    <tr>
+                                        <th><input type="date" name="date" class="input-field"></th>
+                                        <th><input type="text" name="desc" class="input-field"></th>
+                                        <th class="neg"><input type="text" class="input-field"></th>
+                                        <th class="pos"><input type="text" class="input-field"></th>
+                                    </tr>
+
+
+                                </table>
+                            </div>
+                            <div>
+                                <h5>
+                                    <p class="finalbal"></p>
+                                </h5>
+                            </div>
+                            <div class="button-container">
+                                <button id="random-deduction-btn">Generate Random Deduction</button>
+                            </div>
+
+            </section>
+            </div>
+        </section>
+    </aside>
+    </div>
+
+    <input hidden type="text" id="myInput">
+    <button hidden onclick="getValue()">Get Value</button>
+
+    <script>
+        // Function to handle input event
+        function handleInput(event) {
+            let inputValue = event.target.value;
+            if (event.target.closest('.neg')) {
+                inputValue = -Math.abs(inputValue);
+            }
+            console.log(inputValue);
+        }
+
+        // Add event listeners to all input elements with the class 'input-field'
+        document.querySelectorAll('.input-field').forEach(inputElement => {
+            inputElement.addEventListener('input', handleInput);
+        });
+    </script>
+
+    <div id="budget">
+
+    </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
